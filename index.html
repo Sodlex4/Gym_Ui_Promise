@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kings Fitness | Slot Booking</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-dumbbell"></i> Book Your Slot</h1>
+
+    <input type="text" id="clientName" placeholder="Enter your name" />
+    
+    <select id="slotTime">
+      <option value="" disabled selected>Select a time slot</option>
+      <option>6:00 AM - 7:00 AM</option>
+      <option>7:00 AM - 8:00 AM</option>
+      <option>8:00 AM - 9:00 AM</option>
+      <option>5:00 PM - 6:00 PM</option>
+      <option>6:00 PM - 7:00 PM</option>
+      <option>7:00 PM - 8:00 PM</option>
+    </select>
+
+    <button id="bookBtn"><i class="fas fa-calendar-check"></i> Book Slot</button>
+
+    <div id="loader" class="hidden">
+      <i class="fas fa-spinner fa-spin"></i>
+      <p>Booking your slot...</p>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
